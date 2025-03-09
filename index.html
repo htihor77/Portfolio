@@ -7,29 +7,164 @@
 <!--     <script data-ad-client="ca-pub-1642640364155791" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta name="google-site-verification" content="02wm8dMp79FlxOu-QNCovzR5Sdqrn-DnoaZ7fzDLMpg" /> -->
    <!--- basic page needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Ali Solanki | Portfolio Website | Developer</title>
-	<meta name="description" content="Ali Solanki is a Developer cum YouTuber and is a B.Tech student at KJ Somaiya College Of Engineering">  
-	<meta name="author" content="Mohd. Ali Solanki">
 
-    <meta name="keywords" content="ali, solanki, ali solanki, mumbai, developer, web developer, android developer"/>
-    <meta name="subject" content="Ali Solanki Portfolio">
-    <meta name="copyright"content="Ali Solanki">
+   ================================================== -->
+
+   <style>
+
+h3 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .company {
+            color: #0073b1;
+        }
+.skills-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.skill-bars {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-bars li {
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.progress-bar {
+    position: relative;
+    height: 12px;
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-bar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #ff6f61, #ffcc00);
+    transition: width 1.8s ease-in-out;
+    border-radius: 6px;
+}
+
+.progress-bar span {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+/* Animation on Page Load */
+.skill-bars li .progress-bar::before {
+    animation: fillProgress 2s ease-in-out forwards;
+}
+
+@keyframes fillProgress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: attr(data-percent)%;
+    }
+}
+
+	/* Smooth Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glow on Hover */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(52, 152, 219, 0.8);
+    }
+}
+
+/* Floating Effect for Profile Image */
+@keyframes smoothFloat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply Smooth Animations */
+h5, h2 {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Profile Picture Styling */
+.intro-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: smoothFloat 4s ease-in-out infinite;
+}
+
+/* Subtle Hover Effect */
+.intro-info img:hover {
+    transform: scale(1.05);
+    animation: glow 0.8s ease-in-out alternate infinite;
+}
+
+   </style>
+   <meta charset="utf-8">
+	<title>Rohith P | Portfolio Website | Developer</title>
+	<meta name="description" content="Rohith P is a Software Developer and is a B.Tech student at KJ Somaiya College Of Engineering">  
+	<meta name="author" content="Mr. Rohith P">
+
+    <meta name="keywords" content="Rohith P, chennai, developer, web developer, android developer"/>
+    <meta name="subject" content="Rohith P Portfolio">
+    <meta name="copyright"content="Rohith P">
     <meta name="language" content="EN">
     <meta name="robots" content="index, follow" />
     <meta name="revised" content="Thursday, December 12th, 2019, 1:04 am" />
-    <meta name="abstract" content="ali solanki">
-    <meta name="topic" content="ali solanki portfolio">
-    <meta name="summary" content="This is Ali Solanki's Portfolio Website who is a Developer and a YouTuber.">
+    <meta name="abstract" content="Rohith P">
+    <meta name="topic" content="Rohith P portfolio">
+    <meta name="summary" content="This is Rohith P's Portfolio Website who is a Developer and a YouTuber.">
     <meta name="Classification" content="Business">
-    <meta name="author" content="ali solanki, alisolanki123@gmail.com">
-    <meta name="designer" content="ali solanki">
-    <meta name="copyright" content="ali solanki">
-    <meta name="reply-to" content="alisolanki123@gmail.com">
-    <meta name="owner" content="ali solanki">
-    <meta name="url" content="https://alisolanki.github.io/Portfolio/">
-    <meta name="identifier-URL" content="https://alisolanki.github.io/Portfolio/">
+    <meta name="author" content="Rohith P, rohithbtechcse@gmail.com">
+    <meta name="designer" content="Rohith P">
+    <meta name="copyright" content="Rohith P">
+    <meta name="reply-to" content="rohithbtechcse@gmail.com">
+    <meta name="owner" content="Rohith P">
+    <meta name="url" content="https://github.com/htihor77/Portfolio">
+    <meta name="identifier-URL" content="https://github.com/htihor77/Portfolio">
     <meta name="directory" content="submission">
     <meta name="category" content="Business | Portfolio">
     <meta name="coverage" content="Worldwide">
@@ -78,7 +213,7 @@
    			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
 	   		<div class="logo">
-		         <a href="index.html">Ali Solanki</a>
+		         <a href="index.html">Rohith P</a>
 		      </div>		      
 
 		   	<nav id="main-nav-wrap">
@@ -107,12 +242,12 @@
    			<div class="col-twelve">
 
 				   <h5>Hello, World.</h5>
-					<h1>I<span style="color: #CC005F;">'</span>m Ali Solanki<span style="color: #CC005F;">.</span></h1>
+					<h1>I<span style="color: #CC005F;">'</span>m Rohith P<span style="color: #CC005F;">.</span></h1>
 
                     <p class="intro-position">
-                        <span>Developer</span>
-                        <span>Starter</span>
-                        <span>YouTuber</span>
+						<span>Software Engineer</span>
+						<span>Full-Stack Developer</span>
+						<span>Database Enthusiast</span>
                     </p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
@@ -123,13 +258,13 @@
    	</div> <!-- /intro-content --> 
 
         <ul class="intro-social">
-            <li><a href="https://www.linkedin.com/in/ali-solanki-2a1227192/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/alisolankii"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://github.com/alisolanki"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCgzz4Kd1YpzxJOkrhf5U_7A/"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/rohith-p-561705220/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/r_o_h_i_t_h77?igsh=djV3ZzlubmhscjBr"><i class="fa fa-instagram"></i></a></li> 
+            <li><a href="https://github.com/htihor77"><i class="fa fa-github"></i></a></li>
+            <!-- <li><a href="https://www.youtube.com/channel/UCgzz4Kd1YpzxJOkrhf5U_7A/"><i class="fa fa-youtube"></i></a></li>
             <li><a href="https://www.codechef.com/users/alisolanki"><i class="fa fa-code"></i></a></li>
-            <li><a href="https://play.google.com/store/apps/dev?id=6991863212111988524"><i class="fa fa-play"></i></a></li>
-	    <li><a href="https://apps.apple.com/gh/developer/ali-solanki/id1556898924"><i class="fa fa-apple"></i></a></li>
+            <li><a href="https://play.google.com/store/apps/dev?id=6991863212111988524"><i class="fa fa-play"></i></a></li> -->
+	    <!-- <li><a href="https://apps.apple.com/gh/developer/ali-solanki/id1556898924"><i class="fa fa-apple"></i></a></li> -->
         </ul> <!-- /intro-social -->      	
 
    </section> <!-- /intro -->
@@ -141,20 +276,21 @@
 
    	<div class="row section-intro">
    		<div class="col-twelve">
-            <!-- YouTube section ================================================== -->
-            <div style="padding-bottom: 10rem; height: 400px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8zzwUypZiF8" frameborder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-   			<h5>About</h5>
-   			<h2>Let me introduce myself.</h2>
-
+         <center>
+   			     <h5>About</h5>
+   			     <h2>Let me introduce myself.</h2>
+					<p class="lead">"Driven by <font color="#FF0077">passion</font> ,fueled by <font color="#FF0077">ambition</font>, and chasing a <font color="#FF0077">million</font> dreams."</p>
+				</center>
    			<div class="intro-info">
-
-   				<img src="images/profile-pic.jpg" alt="Ali Solanki Picture">
-
-   				<p class="lead">"Lad with a <font color="#FF0077">million</font> dreams."</p>
+				<img src="images/profile-pic.JPG" alt="Rohith Picture" 
+				style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; 
+					   border: 3px solid #3498db; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+					   transition: transform 0.3s ease-in-out;" 
+				onmouseover="this.style.transform='scale(1.1)'" 
+				onmouseout="this.style.transform='scale(1)'">
+		   
+   			
+		
    			</div>   			
 
    		</div>   		
@@ -165,26 +301,25 @@
    		<div class="col-six tab-full">
 
    			<h3>Profile</h3>
-                <p>A Computer Science and Engineering (CSE) B.Tech. student from KJ Somaiya College Of Engineering with excellent academic background and diverse skillset.                       Experienced in Web, Flutter and Android Development.
-                   I am well versed with Flutter, Rest Apis, Python, Kotlin, Java, C++ and basics of JavaScript & CSS.</p>
+             <p>A Software Engineer with experience in Full-Stack Development and Database Management.  
+					Skilled in React, Node.js, Python, Java, and databases like Oracle and Cassandra.  
+					Passionate about building scalable solutions and automation tools for large-scale applications.</p>
+			 
 
    			<ul class="info-list">
    				<li>
    					<strong>Fullname:</strong>
-   					<span>Mohd. Ali Solanki</span>
+   					<span>Rohith P</span>
    				</li>
    				<li>
    					<strong>Birth Date:</strong>
-   					<span>November 8th, 2001</span>
+   					<span>October 13th, 2002</span>
    				</li>
-   				<li>
-   					<strong>Website:</strong>
-   					<span><a href="#">https://alisolanki.github.io/Portfolio/</a></span>
-   				</li>
+   			
                     <li>
                         <strong>Email:</strong>
-                        <span>alisolanki123@gmail.com</span>
-                        <span>mohammed.solanki@somaiya.edu</span>
+                        <span>rohithbtechcse@gmail.com</span>
+                     
                     </li>
 
    			</ul> <!-- /info-list -->
@@ -197,37 +332,51 @@
                 <p>
                     <strong>Languages:</strong><br />
                     <b>English :</b><br /> Read, Write, Speak : <i>Native</i><br />
-                    <b>Hindi :</b><br /> Read, Write, Speak : <i>Native</i><br />
-                    <b>Marathi :</b><br /> Read, Write, Speak : <i>Native</i><br />
-                    <b>French :</b><br /> Read, Write : <i>Proficient</i><br />
-                    <b>Gujarati :</b><br /> Read, Speak : <i>Mother Tongue</i><br />
+                    <b>Tamil :</b><br /> Read, Write, Speak : <i>Native</i><br />
+            
 
                 </p>
+					<ul class="skill-bars">
+						<li>
+							<div class="progress-bar" data-percent="95">
+								<span>95%</span>
+							</div>
+							<strong>React & Node.js</strong>
+						</li>
+						<li>
+							<div class="progress-bar" data-percent="90">
+								<span>90%</span>
+							</div>
+							<strong>OracleDB & Cassandra</strong>
+						</li>
+						<li>
+							<div class="progress-bar" data-percent="85">
+								<span>85%</span>
+							</div>
+							<strong>AWS && GCP && Azure</strong>
+						</li>
+						<li>
+							<div class="progress-bar" data-percent="80">
+								<span>80%</span>
+							</div>
+							<strong>Python & JavaScript</strong>
+						</li>
+						<li>
+							<div class="progress-bar" data-percent="75">
+								<span>75%</span>
+							</div>
+							<strong>Federated learning and IOT</strong>
+						</li>
+						<li>
+							<div class="progress-bar" data-percent="70">
+								<span>70%</span>
+							</div>
+							<strong>VectorDB & AI/ML</strong>
+						</li>
+					</ul>
+			
+				
 
-
-                <ul class="skill-bars">
-                    <li>
-<!--                         <div class="progress percent95"><span>95%</span></div> -->
-                        <strong>Flutter | Dart</strong>
-                    </li>
-                    <li>
-<!--                         <div class="progress percent90"><span>90%</span></div> -->
-                        <strong>Firebase</strong>
-                    </li>
-                    <li>
-<!--                         <div class="progress percent85"><span>90%</span></div> -->
-                        <strong>Python</strong>
-                    </li>
-                    <li>
-<!--                         <div class="progress percent75"><span>75%</span></div> -->
-                        <strong>Android Studio | Kotlin, </strong>
-                    </li>
-		    <li>
-<!--                         <div class="progress percent75"><span>75%</span></div> -->
-                        <strong>React</strong>
-                    </li>
-
-                </ul> <!-- /skill-bars -->		
 
    		</div>
 
@@ -236,8 +385,8 @@
    	<div class="row button-section">
    		<div class="col-twelve">
    			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a href="Ali Solanki – Growth Marketer _ Web3.pdf" title="Download CV (Growth)" class="button button-primary">Download CV (Growth)</a>
-   			<a href="Ali Solanki – Solidity _ Smart Contract Developer.pdf" title="Download CV (Solidity)" class="button button-primary">Download CV (Solidity)</a>
+   			<a href="Reusme_Rohith_P.pdf" title="Download Resume" class="button button-primary">Download Resume</a>
+
    		</div>   		
    	</div>
 
@@ -256,60 +405,70 @@
    		</div>   		
    	</div> <!-- /section-intro--> 
 
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Education</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Bachelor's Degree</h3>
-	   					<p>July 2019 - Present(2023)</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4><a href="https://kjsce.somaiya.edu/">KJ Somaiya College Of Engineering</a></h4>
-	   					<p>Currently pursuing B.Tech. Degree specialization in Computer Science (CSE) at KJ Somaiya College Of Engineering, Vidyavihar - Mumbai. General Secretary at SAHAS                             - KJSCE.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-                
-                
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Schooling</h3>
-	   					<p>2006 - 2017</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4><a href="https://bit.ly/346hi4s">Hansraj Morarji Public School</a></h4>
-	   					<p>Completed my schooling through Maharashtra Board at Hansraj Morarji Public School, Andheri (West) - Mumbai.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
+	   <div class="section">
+		   <h3>Experience</h3>
+   
+		   <p class="job-title">Software Development Engineer I</p>
+		   <p class="company">Verizon (July 2024 – Present) - Chennai, India</p>
+		   <ul>
+			   <li>Received the Spotlight Award for developing DB Health Check (DBCH), a React and Node.js-based application reducing MTTR in production environments.</li>
+			   <li>Developed a Recycle Bin Purge Tool for Oracle with deep linking to DBCH for automated and secure database purging.</li>
+			   <li>Created Query Filter for Cassandra and Cassandra Cluster Status Tool to improve query optimization and performance monitoring.</li>
+			   <li>Automated Jenkins-triggered workflows using React.js and Node-RED, optimizing Cassandra operations and infrastructure resilience.</li>
+		   </ul>
+   
+		   <h3>Intern</h3>
+		   <p class="company">Verizon (Feb 2024 – July 2024) - Chennai, India</p>
+		   <ul>
+			   <li>Worked on Site Reliability Engineering (DB) projects using Jenkins, Ansible, AWS, and CassandraDB.</li>
+			   <li>Gained experience in database monitoring with Datastax, New Relic, and Grafana for improved system observability.</li>
+		   </ul>
+	   </div>
+   
+	   <div class="section">
+		   <h3>Education</h3>
+		   <p><strong>Amrita University</strong> (Oct 2020 – Sep 2024)</p>
+		   <p>Bachelor of Technology in Computer Science and Engineering, Coimbatore, Tamil Nadu</p>
+	   </div>
+   
+	   <div class="section">
+		   <h3>Technical Skills</h3>
+		   <ul>
+			   <li><strong>Languages & Databases:</strong> Python, C, C++, Java, MySQL, SQLite, MongoDB, CassandraDB, OracleDB</li>
+			   <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Node.js, PWA, Postman</li>
+			   <li><strong>Cloud & Tools:</strong> GCP, AWS, Azure, Docker, Jenkins, Figma, Jira, SonarQube</li>
+			   <li><strong>Frameworks:</strong> TensorFlow, PyTorch, Scikit-learn</li>
+		   </ul>
+	   </div>
+   
+	   <div class="section">
+		   <h3>Projects</h3>
+		   <p><strong>Amrita Tree App - Hackathon</strong> (JavaScript, SQLite, PWA)</p>
+		   <ul>
+			   <li>Led a team to develop an environmental awareness app promoting sustainability.</li>
+			   <li>Implemented core functionalities using JavaScript, SQLite, and PWA for offline accessibility.</li>
+		   </ul>
+   
+		   <p><strong>Amrita Multi-Dimensional Data Analytics</strong> (Federated Learning, Linear Regression)</p>
+		   <ul>
+			   <li>Developed a federated learning model to analyze tomato drying conditions in a polyhouse setup.</li>
+			   <li>Implemented a linear regression model to analyze multi-dimensional environmental data.</li>
+		   </ul>
+	   </div>
+   
+	   <div class="section">
+		   <h3>Achievements</h3>
+		   <p><strong>Spotlight Award - Verizon</strong> (March 2025)</p>
+		   <ul>
+			   <li>Recognized for developing DB Health Check (DBCH), significantly reducing MTTR during outages.</li>
+		   </ul>
+   
+		   <p><strong>Green Hackathon - Amrita Vishwa Vidyapeetham</strong> (January 2023)</p>
+		   <ul>
+			   <li>Led a team in the Green Hackathon, securing 5th place among 20 teams.</li>
+			   <li>Awarded a cash prize of 2500 by the Dean for excellence.</li>
+		   </ul>
+	   </div>
 		
 	</section> <!-- /features -->
 
@@ -327,306 +486,242 @@
    			<p class="lead">These Projects have helped me develop my Skills and understand the Industry better.</p>
 
    		</div>   		
-   	</div> <!-- /section-intro--> 
-
-   	<div class="row portfolio-content">
-
-   		<div class="col-twelve">
-
-   			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+		   <div class="project-card" style="background-color: #f0f8ff; border-radius: 15px; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); padding: 20px; transition: transform 0.3s; overflow: hidden; position: relative;">
+			
+			<h2 style="color: #007bff; margin-top: 15px; text-align: center;">Amrita Tree App</h2>
 		
-		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/guestinme_app.png" alt="GuestInMe Nightlife Application">
-	                  <a href="#modal-08" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">GuestInMe Nightlife App</h3>	     					    
-                                    <span class="folio-types">
-                                        Mobile App Development
-                                    </span>		     		
-		     				</div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        </div> <!-- /folio-item -->
-             
-		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/showworld_app.png" alt="Show World Film Directory Application">
-	                  <a href="#modal-07" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Show World App</h3>	     					    
-                                    <span class="folio-types">
-                                        Mobile App Development
-                                    </span>		     		
-		     				</div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        </div> <!-- /folio-item -->
-
-                <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/showworld_website.png" alt="Show World Film Directory Website">
-	                  <a href="#modal-06" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Show World Website</h3>	     					    
-                                    <span class="folio-types">
-                                        Website Development
-                                    </span>		     		
-		     				</div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        	</div> <!-- /folio-item -->
-
-	         	<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/hospipro.jpg" alt="HospiPro">
-	                  <a href="#modal-05" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-                                <h3 class="folio-title">HospiPro</h3>	     					    
-                                    <span class="folio-types">
-                                    Android App Development
-                                </span>
-                            </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/buttonpress.jpg" alt="Button Press">
-	               	<a href="#modal-04" class="overlay">              		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-                                <h3 class="folio-title">Button Press</h3>	     					    
-                                <span class="folio-types">
-                                    Android App Development
-                                </span>		     		
-                            </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/guestin.JPG"alt="GuestIn">
-	                  <a href="#modal-03" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-                                <h3 class="folio-title">GuestIn</h3>	     					    
-                                <span class="folio-types">
-                                    Website Development
-                                </span>		     		
-                            </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        	</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/snakegame.jpg" alt="snakegame">
-	                  <a href="#modal-02" class="overlay">                  	                 
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Snake Game</h3>	     					    
-                                <span class="folio-types">
-                                    Java Game Development
-                                </span>		     		
-                            </div>  	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        	</div> <!-- /folio-item -->     
-
-	        	<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/portfolio_website.JPG" alt="Portfolio">
-	                  <a href="#modal-01" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Portfolio</h3>	     					    
-		     			<span class="folio-types">
-		     				Website Development
-		     			</span>		     		
-		     		</div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        	</div> <!-- /folio-item -->
-
-	            <!-- modal popups - begin
-	            ============================================================= -->
-		<div id="modal-08" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-guestinme_app.png" alt="GuestInMe App" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>GuestInMe Nightlife App</h4>		      
-					      <p>GuestInMe Nightlife App made using Flutter and Firebase.</p>
-					      <div class="categories">Flutter App Development</div>			               
-					   </div>
-			         <div class="link-box">
-			            <a href="https://onelink.to/guestinme">App</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>
-                </div> <!-- /modal-08 -->
-                <div id="modal-07" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-showworld_app.png" alt="Show World Film Directory App" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Show World Film Directory App</h4>		      
-					      <p>Show World Film Directory App made using Flutter and Firebase.</p>
-					      <div class="categories">Flutter App Development</div>			               
-					   </div>
-			         <div class="link-box">
-			            <a href="https://play.google.com/store/apps/details?id=com.showworld.showworldfilmdirectory">App</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>
-                </div> <!-- /modal-07 -->
-
-                <div id="modal-06" class="popup-modal slider mfp-hide">
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-showworld_website.png" alt="Show World Film Directory Website" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Show World Website</h4>		      
-					      <p>Show World Film Directory Website made using HTML, CSS, JavaScript, PHP.</p>
-					      <div class="categories">Website Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://showworlddirectory.com">Visit</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>
-                </div> <!-- /modal-06 -->
-
-	            <div id="modal-05" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-hospipro.jpg" alt="HospiPro" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>HospiPro</h4>		      
-					      <p>Android App for Hospital management system. It was built under 24hrs for the KJSCE Hackathon - 2019. </p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/Team-Eureka04/Hospipro/tree/App">Github</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
+			<div class="carousel-container">
+				<div class="carousel">
+					<h5 class="sentence">🌲 Trees are a big part of our lives, and Amrita is full of them.</h5>
+					<h5 class="sentence">🌳 This is an interactive online repository of all the trees, our contribution to the best part of campus.</h5>
+					<h5 class="sentence">🎮 Join the hunt in unlocking trees by finding them and answering a short quiz.</h5>
+					<h5 class="sentence">🏆 Unlocking a tree gives you points, which can be redeemed for prizes.</h5>
+					<h5 class="sentence">📍 Walk up to a tree, tap its icon on the map, and unlock the tree by answering a quiz!</h5>
+					<h5 class="sentence">💚 All the best! Explore the campus and enjoy the biodiversity it offers.</h5>
 				</div>
-			 <!-- /modal-05 -->
+			</div>
+			
+			<audio id="popSound" src="https://www.soundjay.com/button/beep-07.mp3"></audio>
+			<audio id="sparkleSound" src="https://www.soundjay.com/button/button-09.mp3"></audio>
+			<audio id="natureSound" src="https://www.soundjay.com/nature/forest-sound-2.mp3" loop autoplay></audio>
+			
+			<style>
+			.carousel-container {
+				perspective: 1000px;
+				text-align: center;
+				overflow: hidden;
+				height: 100px;
+			}
+			
+			.carousel {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 100px;
+				position: relative;
+				transform-style: preserve-3d;
+			}
+			
+			.sentence {
+				font-size: 1.2rem;
+				color: #c32a0f;
+				font-weight: bold;
+				text-shadow: 0 0 20px #ff5722, 0 0 30px #ff5722;
+				opacity: 0;
+				transform: rotateX(-90deg) translateY(-50px);
+				transition: all 1s ease-in-out;
+			}
+			
+			.sentence.active {
+				opacity: 1;
+				transform: rotateX(0deg) translateY(0px) scale(1.1);
+			}
+			
+			/* Glowing Effect */
+			.sentence.active::before {
+				content: "✨";
+				animation: glow 1.5s infinite alternate;
+			}
+			
+			@keyframes glow {
+				0% { text-shadow: 0 0 20px #ff5722, 0 0 30px #ff5722; }
+				100% { text-shadow: 0 0 30px #ff9800, 0 0 40px #ff9800; }
+			}
+			
+			/* Smooth transition every 5 seconds */
+			.sentence:nth-child(1) { animation: showText 30s infinite 0s; }
+			.sentence:nth-child(2) { animation: showText 30s infinite 5s; }
+			.sentence:nth-child(3) { animation: showText 30s infinite 10s; }
+			.sentence:nth-child(4) { animation: showText 30s infinite 15s; }
+			.sentence:nth-child(5) { animation: showText 30s infinite 20s; }
+			.sentence:nth-child(6) { animation: showText 30s infinite 25s; }
+			
+			@keyframes showText {
+				0% { opacity: 0; transform: rotateX(-90deg) translateY(-50px); }
+				10% { opacity: 1; transform: rotateX(0deg) translateY(0px); }
+				20% { opacity: 0; transform: rotateX(90deg) translateY(50px); }
+				100% { opacity: 0; transform: rotateX(-90deg) translateY(-50px); }
+			}
+			</style>
+			
+			<script>
+			let index1 = 0;
+			const sentences1 = document.querySelectorAll('.sentence');
+			const popSound = document.getElementById('popSound');
+			const sparkleSound = document.getElementById('sparkleSound');
+			const natureSound = document.getElementById('natureSound');
+			
+			// Lower the background sound for chill vibes
+			natureSound.volume = 0.2;
+			
+			function changeSentence() {
+				sentences1.forEach((sentence, i) => {
+					sentence.classList.remove('active');
+				});
+			
+				// Play Pop Sound Effect
+				popSound.currentTime = 0;
+				popSound.play();
+			
+				// Activate the current sentence
+				sentences[index1].classList.add('active');
+			
+				// Play Sparkle Sound Effect when unlocking trees
+				if (index1 === 4) {  
+					sparkleSound.currentTime = 0;
+					sparkleSound.play();
+				}
+			
+				index1 = (index1 + 1) % sentences1.length;
+			}
+			
+			// Change text every 5 seconds
+			setInterval(changeSentence, 5000);
+			</script>
+			
+			
+		
+			<!-- Futuristic Button -->
+			<a href="https://amritatrees.glitch.me/game" target="_blank" style="
+				text-decoration: none; 
+				background-color: #007bff; 
+				color: white; 
+				padding: 12px 25px; 
+				border-radius: 5px; 
+				display: block; 
+				text-align: center; 
+				margin-top: 20px; 
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+				transform: scale(1); 
+				transition: all 0.4s;">
+				🚀 View Project
+			</a>
+		</div>
+		
+		<script>
+			// Auto Change Text every 5 seconds
+			let index = 0;
+			const sentences = document.querySelectorAll('.sentence');
+		
+			function changeText() {
+				sentences.forEach(s => s.style.display = 'none');
+				sentences[index].style.display = 'block';
+				index = (index + 1) % sentences.length;
+			}
+			setInterval(changeText, 5000);
+		
+			// 3D Hover Effect
+			const card = document.querySelector('.project-card');
+			card.addEventListener('mouseenter', () => {
+				card.style.transform = 'scale(1.05)';
+				card.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.2)';
+			});
+		
+			card.addEventListener('mouseleave', () => {
+				card.style.transform = 'scale(1)';
+				card.style.boxShadow = '5px 5px 20px rgba(0, 0, 0, 0.1)';
+			});
+		</script>
+		
+	
 
-		<div id="modal-04" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-buttonpress.jpg" alt="Button Press" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Button Press</h4>		      
-					      <p>Android Application that helps generate Random numbers.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/alisolanki/ButtonPress">Github</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-04 -->
-
-                <div id="modal-03" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-guestin.JPG" alt="GuestIn" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>GuestIn</h4>		      
-					      <p><strong>GuestIn</strong>, your one stop solution to get listed in the guestlist
-							of any Club or Bar all over <strong>Mumbai</strong>.</p>
-
-					      <div class="categories">Website Design</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/alisolanki/GuestIn">GitHub</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-03 -->
-
-                <div id="modal-02" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-snakegame.JPG" alt="Snake Game" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Snake Game</h4>		      
-					      <p>Classical Snake game on Java (one of my first Projects).</p>
-
-					      <div class="categories">Java Game Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/alisolanki/Snake-Game">Github</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-02 -->
-
-                <div id="modal-01" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-portfolio_website.JPG" alt="Portfolio" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Portfolio</h4>		      
-					      <p>My Portfolio Website made using HTML, CSS, JavaScript, PHP.</p>
-
-					      <div class="categories">Website Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://alisolanki.gq">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-01 -->
 
 
-				   <!-- modal popups - end
-	            ============================================================= -->
 
-	         </div> <!-- /portfolio-wrapper --> 
 
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
+		<div class="project-card" style="background-color: #f0f8ff; border-radius: 15px; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); padding: 20px; transition: transform 0.3s;">
+			
+			<h2 style="color: #007bff; margin-top: 15px; text-align: center;">Text Detection App</h2>
+		
+			<div class="carousel-text-app" style="height: 100px; overflow: hidden; text-align: center; perspective: 1000px;">
+				<h4 class="text-line" style="color: #c32a0f; font-size: 1rem;">📸 Upload any image containing text.</h4>
+				<h4 class="text-line" style="color: #c32a0f; font-size: 1rem; display: none;">💯 The app uses OCR to extract text from the image.</h4>
+				<h4 class="text-line" style="color: #c32a0f; font-size: 1rem; display: none;">📜 Extract text from invoices, documents, or prescriptions.</h4>
+				<h4 class="text-line" style="color: #c32a0f; font-size: 1rem; display: none;">🔥 Text will appear below the image instantly.</h4>
+				<h4 class="text-line" style="color: #c32a0f; font-size: 1rem; display: none;">💎 Supports multi-language text detection (English, Tamil, Hindi).</h4>
+				<h4 class="text-line" style="color: #c32a0f; font-size: 1rem; display: none;">📄 Quick and accurate text recognition!</h4>
+			</div>
+			
+			<a href="https://htihor77.github.io/text-detection-app/" target="_blank" style="
+				text-decoration: none; 
+				background-color: #007bff; 
+				color: white; 
+				padding: 12px 25px; 
+				border-radius: 5px; 
+				display: block; 
+				text-align: center; 
+				margin-top: 20px; 
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+				transform: scale(1); 
+				transition: all 0.4s;">
+				🚀 View Text Detection App
+			</a>
+			
+			<style>
+			.carousel-text-app h4 {
+				font-weight: bold;
+				opacity: 0;
+				transform: rotateX(-90deg) translateY(-50px);
+				transition: all 1s ease-in-out;
+				text-shadow: 0 0 15px #c32a0f, 0 0 25px #c32a0f;
+			}
+			
+			.carousel-text-app h4.active {
+				opacity: 1;
+				transform: rotateX(0deg) translateY(0px) scale(1.05);
+			}
+			
+			/* Glowing effect on text */
+			.carousel-text-app h4.active::after {
+				content: '✨';
+				font-size: 1.2rem;
+				color: #ff5722;
+				text-shadow: 0 0 25px #ff5722, 0 0 35px #ff5722;
+				animation: glowText 1.5s infinite alternate;
+			}
+			
+			@keyframes glowText {
+				0% { text-shadow: 0 0 25px #ff5722, 0 0 35px #ff5722; }
+				100% { text-shadow: 0 0 35px #ff9800, 0 0 45px #ff9800; }
+			}
+			</style>
+			
+			<script>
+				let textAppIndex = 0;
+				const textAppLines = document.querySelectorAll('.text-line');
+			
+				function changeTextApp() {
+					textAppLines.forEach(line => line.classList.remove('active'));
+					textAppLines[textAppIndex].classList.add('active');
+					textAppIndex = (textAppIndex + 1) % textAppLines.length;
+				}
+			
+				setInterval(changeTextApp, 5000);
+			</script>
+			
+		
+   	</div> 
 		
 	</section> <!-- /portfolio --> 
 
@@ -718,7 +813,7 @@
    		<div class="col-twelve">
             
 <!-- form -->
-<form name="form" id="contactForm" method="POST" action="https://formspree.io/f/mayaqvnv">
+<form name="form" id="contactForm" method="POST" action="https://formspree.io/f/xvgkplqp">
       			<fieldset>
                     <div class="form-field">
  				<input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
@@ -770,8 +865,8 @@
    			<h5>Where to find me</h5>
 
    			<p>
-            Andheri West, Mumbai<br>
-            400058 India
+            Chennai<br>
+            600032 India
             </p>
 
    		</div>
@@ -784,8 +879,8 @@
 
    			<h5>Email Me At</h5>
 
-   			<p>alisolanki123@gmail.com<br>
-			   mohammed.solanki@somaiya.edu			     
+   			<p>rohithbtechcse@gmail.com<br>
+					     
 			</p>
 
    		</div>
@@ -798,7 +893,7 @@
 
    			<h5>Call Me At</h5>
 
-			<p>Phone: Telegram (<a href="https://t.me/alisolanki">alisolanki</a>)
+			<p>Phone: +91 7867873477 (<a href="">Rohith P</a>)
 			</p>
    		</div>
    		
@@ -815,21 +910,17 @@
      		<div class="col-six tab-full pull-right social">
 
                 <ul class="footer-social">
-                    <li><a href="https://www.linkedin.com/in/ali-solanki-2a1227192/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/alisolankii"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/alisolanki"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCgzz4Kd1YpzxJOkrhf5U_7A/"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.codechef.com/users/alisolanki"><i class="fa fa-code"></i></a></li>
-            	    <li><a href="https://play.google.com/store/apps/dev?id=6991863212111988524"><i class="fa fa-play"></i></a></li>
-	    	    <li><a href="https://apps.apple.com/gh/developer/ali-solanki/id1556898924"><i class="fa fa-apple"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rohith-p-561705220/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/r_o_h_i_t_h77?igsh=djV3ZzlubmhscjBr"><i class="fa fa-instagram"></i></a></li> 
+            <li><a href="https://github.com/htihor77"><i class="fa fa-github"></i></a></li>
                 </ul> 
 	      		
 	      </div>
 
       	<div class="col-six tab-full">
 	      	<div class="copyright">
-		        	<span>© Copyright 2021 </span> 
-		        	<span>Design by <a href="https://www.linkedin.com/in/ali-solanki-2a1227192/">Mohd. Ali Solanki</a></span>	         	
+		        	<span>© Copyright 2025 </span> 
+		        	<span>Design by <a href="https://www.linkedin.com/in/rohith-p-561705220/">Rohith</a></span>	         	
 		         </div>		                  
 	      	</div>
 
